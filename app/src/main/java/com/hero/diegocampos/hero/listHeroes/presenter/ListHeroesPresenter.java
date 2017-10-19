@@ -11,9 +11,6 @@ import com.hero.diegocampos.hero.listHeroes.contract.ListHeroesContract;
 
 public class ListHeroesPresenter implements ListHeroesContract.Presenter {
 
-
-
-
     private HeroInteractor interactor;
     private ListHeroesContract.View listHeroesFragments;
     private Activity act;
@@ -23,7 +20,7 @@ public class ListHeroesPresenter implements ListHeroesContract.Presenter {
         this.interactor = new HeroInteractor(activity,this);
         this.act = activity;
     }
-//    md5(ts+privateKey+publicKey)
+
     public void start(){
         listHeroesFragments.showImageFondo(true);
         getDatos();
@@ -57,6 +54,5 @@ public class ListHeroesPresenter implements ListHeroesContract.Presenter {
     public HeroInteractor getInteractor() {
         return interactor;
     }
-
 
 }

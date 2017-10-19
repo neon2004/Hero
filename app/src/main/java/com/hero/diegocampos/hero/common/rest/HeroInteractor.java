@@ -34,8 +34,6 @@ public class HeroInteractor {
     }
 
     public ArrayList<Superhero> getListHeroes() {
-        // final ArrayList<Superhero> lisresult = new ArrayList<Superhero>();
-
         call = BaseActivity.interfaces.getHeroes();
         call.enqueue(new Callback<Heroes>() {
             @Override
